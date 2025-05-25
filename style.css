@@ -12,7 +12,7 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #dce6f5;
+    background-color: #D0EAD7;
     padding: 10px;
     border-radius: 0 10px 10px 0;
     display: flex;
@@ -23,7 +23,7 @@ body {
   
   .menu-fijo a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #556B2F;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
@@ -31,7 +31,8 @@ body {
   }
   
   .menu-fijo a:hover {
-    background-color: #b0c9f7;
+    background-color: #2E7D32;
+    color: white;
   }
   
   /* Layout principal */
@@ -44,7 +45,7 @@ body {
   /* Perfil */
   .perfil {
     flex: 0 0 250px;
-    background-color: #e3f2fd;
+    background-color: #A8D5BA;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -63,7 +64,7 @@ body {
   /* Contenido */
   .contenido {
     flex: 1;
-    background-color: #ffffff;
+    background-color: #E6E8E6;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -74,7 +75,7 @@ body {
   }
   
   .contenido h3 {
-    border-left: 4px solid #769de4;
+    border-left: 4px solid #2E7D32;
     padding-left: 10px;
     color: #2c3e50;
   }
