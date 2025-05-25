@@ -1,0 +1,118 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Menú lateral fijo */
+  .menu-fijo {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #dce6f5;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .menu-fijo a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.2s;
+  }
+  
+  .menu-fijo a:hover {
+    background-color: #b0c9f7;
+  }
+  
+  /* Layout principal */
+  .contenedor {
+    display: flex;
+    padding: 40px 40px 40px 120px;
+    gap: 40px;
+  }
+  
+  /* Perfil */
+  .perfil {
+    flex: 0 0 250px;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .perfil img {
+    width: 120px;
+    height: 120px;
+    clip-path: circle(50%);
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Contenido */
+  .contenido {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contenido section {
+    margin-bottom: 40px;
+  }
+  
+  .contenido h3 {
+    border-left: 4px solid #769de4;
+    padding-left: 10px;
+    color: #2c3e50;
+  }
+  
+  /* Habilidades */
+  .habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .habilidades img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
+  
+  .habilidades img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .menu-fijo {
+      position: static;
+      flex-direction: row;
+      justify-content: space-around;
+      transform: none;
+      border-radius: 0;
+      padding: 10px;
+    }
+  
+    .perfil, .contenido {
+      width: 100%;
+    }
+  }
